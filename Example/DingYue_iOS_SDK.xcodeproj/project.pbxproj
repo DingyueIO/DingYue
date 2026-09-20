@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D12700000000000000000001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12700000000000000000002 /* SceneDelegate.swift */; };
 		18B8C8302A0B935F001A22E4 /* DingYue.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18B8C82F2A0B935F001A22E4 /* DingYue.plist */; };
 		470157E7290A52B2000ABC76 /* 7306588143563858788 in Resources */ = {isa = PBXBuildFile; fileRef = 470157E6290A52B2000ABC76 /* 7306588143563858788 */; };
 		47FF2D702876F21300437080 /* LBWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF2D6F2876F21300437080 /* LBWebViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D12700000000000000000002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18B8C82F2A0B935F001A22E4 /* DingYue.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DingYue.plist; sourceTree = "<group>"; };
 		18F570872BFC933300C4E142 /* DingYue_iOS_SDK_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DingYue_iOS_SDK_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		3776A770FF6B865412F887CF /* Pods-DingYue_iOS_SDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DingYue_iOS_SDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-DingYue_iOS_SDK_Tests/Pods-DingYue_iOS_SDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				CF4007102C60C66200BCC8A5 /* LuaTest */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				D12700000000000000000002 /* SceneDelegate.swift */,
 				CFAA73452FEA694C003653A3 /* DemoGuide.bundle */,
 				47FF2D6F2876F21300437080 /* LBWebViewController.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -350,25 +353,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DingYue_iOS_SDK_Example/Pods-DingYue_iOS_SDK_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DingYue_iOS_SDK_Example/Pods-DingYue_iOS_SDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AnyCodable-FlightSchool/AnyCodable.framework",
-				"${BUILT_PRODUCTS_DIR}/DingYue_iOS_SDK/DingYue_iOS_SDK.framework",
-				"${BUILT_PRODUCTS_DIR}/FCUUID/FCUUID.framework",
-				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
-				"${BUILT_PRODUCTS_DIR}/UICKeyChainStore/UICKeyChainStore.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/DingYue_iOS_SDK/DingYueLua.framework/DingYueLua",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DingYue_iOS_SDK_Example/Pods-DingYue_iOS_SDK_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnyCodable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DingYue_iOS_SDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCUUID.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICKeyChainStore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DingYueLua.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -386,6 +380,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				47FF2D702876F21300437080 /* LBWebViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				D12700000000000000000001 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,7 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6758SSTNXL;
 				INFOPLIST_FILE = DingYue_iOS_SDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -567,7 +562,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6758SSTNXL;
 				INFOPLIST_FILE = DingYue_iOS_SDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -599,7 +594,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -623,7 +618,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

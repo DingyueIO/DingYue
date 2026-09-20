@@ -322,8 +322,8 @@ class ViewController: UIViewController {
     }
 
     @objc func gotoWebGuide() {
-        guard let rootDelegate = UIApplication.shared.delegate as? DYMWindowManaging else {
-            showAlert(title: "Guide", message: "UIApplication.shared.delegate 未实现 DYMWindowManaging。")
+        guard let rootDelegate = view.window?.windowScene?.delegate as? DYMWindowManaging else {
+            showAlert(title: "Guide", message: "当前场景未提供 Guide 窗口。")
             return
         }
 
